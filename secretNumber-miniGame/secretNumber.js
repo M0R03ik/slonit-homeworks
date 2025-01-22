@@ -17,6 +17,7 @@ function secretNumberGame() {
   while (true) {
     attempt++
     computerTwoNumber = getMiddleNumber(minNumber, maxNumber)
+    console.log(`Попытка ${attempt}, диапазон от ${minNumber} до ${maxNumber}`)
 
     console.log(`Компьютер 2: Пробую число ${computerTwoNumber}.`)
     if (computerOneNumber - computerTwoNumber > 0) {
